@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -69,6 +70,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging:21.0.1'
     implementation platform('com.google.firebase:firebase-bom:26.2.0')
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
+//    firebase Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.1.1'
 //    Dagger-Hilt
     def daggerhilt_version = "2.28.3-alpha"
     implementation "com.google.dagger:hilt-android:$daggerhilt_version"

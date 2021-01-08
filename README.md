@@ -1,2 +1,2 @@
 # mPlayer
-> aplicativo utilizado para aprender o uso de media em android nativo.
+> app created to learn how to use media with android
