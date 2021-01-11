@@ -44,8 +44,10 @@ dependencies {
     def retrofit_version = "2.9.0"
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
-//    Picasso
-    implementation 'com.squareup.picasso:picasso:2.71828'
+//    Glide
+    def glide_version = "4.11.0"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
 //    Lifecycle
     def lifecycle_version = "2.2.0"
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
@@ -72,13 +74,15 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
 //    firebase Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.1.1'
+//    firestore
+    implementation 'com.google.firebase:firebase-firestore:22.0.1'
 //    Dagger-Hilt
     def daggerhilt_version = "2.28.3-alpha"
     implementation "com.google.dagger:hilt-android:$daggerhilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$daggerhilt_version"
     def hilt_version = "1.0.0-alpha02"
-    implementation "androidx.hily:hilt-lifecycle-viewmodel:$hilt_version"
-    kapt "androidx.hily:hilt-compiler:$hilt_version"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_version"
+    kapt "androidx.hilt:hilt-compiler:$hilt_version"
 //    exoplayer
     def exoplayer_version = "2.12.2"
     implementation "com.google.android.exoplayer:exoplayer-core:$exoplayer_version"

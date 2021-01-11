@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "262750969145",
+    "project_id": "mplayer-c4f7b",
+    "storage_bucket": "mplayer-c4f7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262750969145:android:ea7a1ad00223fb5b7f1ce8",
+        "android_client_info": {
+          "package_name": "com.paulo4fs.playmusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262750969145-g707kair4qt8267r41agcb29aeevqhm8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTjkJW1e_arb5MpQgL5RLK9ttCaSgfuxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262750969145-g707kair4qt8267r41agcb29aeevqhm8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
