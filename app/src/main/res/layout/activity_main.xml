@@ -6,27 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <fragment
-        android:id="@+id/navigation_header_container"
+    <FrameLayout
+        android:id="@+id/flContainerMain"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/vpSongMain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/navgraph"
-        tools:ignore="FragmentTagUsage" />
+        app:layout_constraintTop_toTopOf="parent">
+        <fragment
+            android:id="@+id/navigation_header_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/navgraph"
+            tools:ignore="FragmentTagUsage" />
+    </FrameLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="More Fonts..."
-        android:text="asdf"
-        android:textSize="@dimen/dim10sp"
-        app:layout_constraintBottom_toTopOf="@+id/navigation_header_container"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivSongImageMain"
+        android:layout_width="@dimen/dim56dp"
+        android:layout_height="@dimen/dim56dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpSongMain"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dim56dp"
+        android:background="@color/colorDarkBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivPlayPauseMain"
+        app:layout_constraintStart_toEndOf="@+id/ivSongImageMain" />
+
+    <ImageView
+        android:id="@+id/ivPlayPauseMain"
+        android:layout_width="@dimen/dim56dp"
+        android:layout_height="@dimen/dim56dp"
+        android:background="@color/colorDarkBg"
+        android:src="@drawable/exo_controls_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

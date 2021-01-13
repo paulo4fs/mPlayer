@@ -3,4 +3,5 @@
     <dimen name="dim10sp">10sp</dimen>
     <dimen name="dim100dp">100dp</dimen>
     <dimen name="dim25dp">25dp</dimen>
+    <dimen name="dim56dp">56dp</dimen>
 </resources>
